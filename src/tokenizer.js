@@ -202,7 +202,6 @@ var tokenizer = function ( trex, categories, preserve ) {
         // This indicates spaces: count them.
         precedingSpaces = t.length;
         if ( hasNBSP ) {
-          throw new Error('it works');
           nbSpaces = t;
           precedingSpaces = maxPrecedingSpaces;
         } else if ( precedingSpaces > maxPrecedingSpaces - 1 ) precedingSpaces = maxPrecedingSpaces - 1;
